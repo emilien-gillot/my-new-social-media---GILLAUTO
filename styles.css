@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+}
+header{
+    text-align: center;
+    background-color: #1d1d1d;
+    color: white;
+}
+section{
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1{
+    font-family: kohlipe, Helvetica, sans-serifç;
+    font-size: 3.6em;
+    padding-top: 40px;
+    margin-top: 0;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 20px;
+}
+h3::before{
+    content: '« ';
+    color: gray;
+}
+h3::after{
+    content: ' »';
+    color: gray;
+}
+h3{
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    padding: 0;
+    display: inline;
+}
+nav{
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 3px 1px -1px rgba(0, 0, 0, 0.5);
+    font-size: 1.1em;
+    padding: 15px;
+}
+li{
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+}
+
+ul li a:hover {
+    font-weight: 900;
+}
+footer{
+    background-color: #1d1d1d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+#contact{
+    border: 1px black solid;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+#logo{
+    margin-top: 30px;
+    height: 50px;
+    margin-bottom: 40px;
+}
+
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.separator{
+    width: 40px;
+    height: 1px;
+    background-color: #999999;
+    margin: 15px auto;
+    display: block;
+}
+
+.conteneur{
+    width: 80%;
+    margin: auto;
+}
+.projet{
+    width: 400px;
+    margin: 30px;
+    display: inline-block;
+    background: white;
+    padding-bottom: 15px;
+    border: 0px black solid;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.projet:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: 0.2s ease;
+}
+
+
+.projet img{
+    min-width: 400px;
+    height: 266px;
+}
+.picture{
+    width: 400px;
+    height: 266px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.picture-project img, .picture-project iframe{
+    width: 80%;
+    margin-bottom: 50px;
+}
+.date-project{
+    font-size: 0.7em;
+}
+.projet span{
+    display: block;
+    text-transform: uppercase;
+}
+
+
+/* POLICE */
+
+@font-face {
+    font-family: 'kohlipe';
+    src: url(./src/kohlipe.otf);
+}
+
+/* MEDIA */
+
+@media all and (max-width: 1000px){
+    .projet { width: 100%; margin: 15px auto;}
+    .projet img {width: 100%; height: auto; min-width: auto;}
+    .projet .picture {width: 100%; height: auto;}
+    header h2 { width: 90%;}
+}
